@@ -16,12 +16,12 @@ const ToDoPanel = ({ addTask }: ToDoPanelProps) => {
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
        const { name, value } = event.target;
     
-       setTodo({ ...todo, [name]: value.trim() })
+       setTodo({ ...todo, [name]: value })
     }
 
     const handleAdd = (): void => {
         if (todo.task !== '') {
-            addTask(todo.task);
+            addTask(todo.task.trim());
             setTodo({ task: '' });
         }
     }
