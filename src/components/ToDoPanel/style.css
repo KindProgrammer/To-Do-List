@@ -1,0 +1,39 @@
+.panel {
+    display: flex;
+    width: 100%;
+}
+
+.input {
+    width: 80%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    border: 1px solid var(--main-color);
+}
+
+.submit-btn {
+    width: 20%;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    box-sizing: border-box;
+    color: var(--submit-btn-color);
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, var(--main-color), var(--contrasting-color));
+}
+
+@media (max-width: 450px) {
+    .panel {
+        flex-direction: column;
+    }
+
+    .input{
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .submit-btn{
+        width: 100%;
+    }
+}

@@ -1,0 +1,58 @@
+.info {
+    color: var(--main-color);
+    text-align: end;
+    font-size: 1.2rem;
+}
+
+.controls-btns {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.controls-btn {
+    height: 2rem;
+    color: white;
+}
+
+.controls-btn:hover {
+    background-color: var(--main-color-hover);
+    color: white;
+}
+
+.all-tasks-btn, .active-task-btn, .is-done-btn {
+    background-color: var(--main-color);
+    outline: none;
+}
+
+.del-done-task-btn {
+    margin-left: auto;
+    background-color: var(--black);
+}
+
+.active-btn, .active-btn:active, .active-btn:focus {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.del-done-task-btn:hover {
+    border: 1px solid var(--black);
+    color: var(--black);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 450px) {
+    .controls-btns {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .del-done-task-btn {
+        width: 100%;
+    }
+
+    .info {
+        text-align: center;
+    }
+}

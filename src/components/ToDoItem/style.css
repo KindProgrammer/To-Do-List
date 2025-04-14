@@ -1,0 +1,53 @@
+.task {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-control-btns {
+    display: flex;
+    gap: 1px;
+    margin-left: auto;
+}
+
+.task-control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1px;
+}
+
+.check {
+    background-color: var(--main-color);
+}
+
+.check:hover {
+    background-color: var(--main-color-hover);
+}
+
+.cross {
+    background-color: var(--contrasting-color);
+}
+
+.cross:hover {
+    background-color: var(--contrasting-color-hover);
+}
+
+.icon {
+    height: 100%;
+    color: white;
+}
+
+.task-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--done-task);
+}

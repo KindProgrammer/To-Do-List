@@ -1,0 +1,26 @@
+.tasks-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 12rem;
+    overflow-y: auto;
+}
+
+.tasks-list {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black) rgba(0, 0, 0, 0);
+}
+
+.tasks-list::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+.tasks-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.tasks-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 3px solid var(--black);
+}
