@@ -1,7 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 
 import './style.css';
-import React from 'react';
 import Cross from '../../assets/Cross.svg?react';
 import Check from '../../assets/Check.svg?react';
 

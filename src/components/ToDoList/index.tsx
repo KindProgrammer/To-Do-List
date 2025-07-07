@@ -1,5 +1,4 @@
 import './style.css';
-import React from 'react';
 import ToDoItem from '../ToDoItem';
 import { ToDo } from '../../App';
 
